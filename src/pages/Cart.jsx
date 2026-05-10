@@ -60,15 +60,7 @@ const Cart = () => {
             <span className="text-gray-600">Сумма заказа:</span>
             <span className="font-bold text-2xl text-blue-600">${totalAmount.toFixed(2)}</span>
           </div>
-          <button 
-            onClick={() => {
-              alert('Ура! Ваш заказ успешно оформлен!');
-              clearCart(); // Очищаем корзину после оформления
-            }}
-            className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition font-bold text-lg shadow-md"
-          >
-            Оплатить
-          </button>
+<Link to="/checkout" className="block text-center w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition font-bold text-lg shadow-md">Оплатить</Link>
         </div>
       </div>
     </div>
